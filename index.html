@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,49 +14,49 @@
     font-family: Arial, sans-serif;
 }
 
-html,body{
-    width:100%;
-    overflow-x:hidden;   /* side space रोकने के लिए */
-    background:#dff4ff;
+body{
+    background:#eaf7ff;
 }
 
 /* HERO SECTION */
 .hero{
     width:100%;
-    height:240px;   /* mobile पर कम height */
+    height:260px;
     background:url("newbanner.jpg") center/cover no-repeat;
     position:relative;
 }
 
-/* Logo small left corner */
+/* Logo top-left small */
 .logo{
     position:absolute;
-    top:15px;
-    left:15px;
-    width:50px;     /* छोटा neat logo */
+    top:12px;
+    left:12px;
+    width:50px;
+    background:white;
+    padding:5px;
+    border-radius:10px;
 }
 
-/* Headline box right side */
+/* Headline top-right */
 .hero-text{
     position:absolute;
-    right:20px;
-    top:40px;      /* ऊपर उठा दिया */
-    background:linear-gradient(135deg, black, orange);
-    padding:14px 22px;
-    border-radius:14px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.4);
+    top:15px;
+    right:15px;
+    background:linear-gradient(135deg, #ff7a00, #000000);
+    padding:14px 20px;
+    border-radius:16px;
     text-align:right;
+    box-shadow:0 4px 10px rgba(0,0,0,0.4);
 }
 
 .hero-text h1{
-    font-size:38px;
+    font-size:32px;
     color:white;
-    margin-bottom:4px;
-    letter-spacing:1px;
+    margin-bottom:6px;
 }
 
 .hero-text p{
-    font-size:20px;
+    font-size:18px;
     color:yellow;
     font-weight:bold;
 }
@@ -68,10 +69,10 @@ html,body{
 
 .title{
     text-align:center;
-    font-size:30px;
+    font-size:26px;
     font-weight:bold;
     color:#0077b6;
-    margin:18px 0;
+    margin:20px 0;
 }
 
 /* FLAVOUR BOX */
@@ -86,14 +87,14 @@ html,body{
 }
 
 .box img{
-    width:95px;
+    width:90px;
     margin-right:14px;
 }
 
 .box h3{
     color:#ff7a00;
-    font-size:22px;
-    margin-bottom:4px;
+    font-size:20px;
+    margin-bottom:6px;
 }
 
 .box p{
@@ -106,31 +107,28 @@ html,body{
     background:#0077b6;
     color:white;
     text-align:center;
-    padding:24px 15px;
+    padding:22px;
     margin-top:25px;
 }
 
 .distributor h2{
-    font-size:24px;
+    font-size:22px;
 }
 
 .distributor p{
-    margin-top:10px;
-    font-size:15px;
+    margin-top:8px;
 }
 
-/* Responsive safety */
+/* Mobile polish */
 @media(max-width:600px){
     .hero{
-        height:220px;   /* zoom पर भी छोटा रहे */
+        height:230px;
     }
-
     .hero-text h1{
-        font-size:32px;
+        font-size:26px;
     }
-
     .hero-text p{
-        font-size:18px;
+        font-size:16px;
     }
 }
 </style>
