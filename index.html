@@ -1,218 +1,181 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MR SODA</title>
 
 <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
 body{
-margin:0;
-font-family: Arial, sans-serif;
-background:#eaf7ff;
+    background:#dff4ff;
 }
 
-/* FULL WIDTH CONTAINER */
-.main{
-width:100%;
-max-width:420px;
-margin:auto;
-background:white;
+/* HERO SECTION */
+.hero{
+    width:100%;
+    height:280px;
+    background:url("background.jpg") center/cover no-repeat;
+    position:relative;
 }
 
-/* BANNER */
-.banner{
-position:relative;
-width:100%;
-height:380px;
-overflow:hidden;
-}
-
-.banner img{
-width:100%;
-height:100%;
-object-fit:cover;
-}
-
-/* OVERLAY */
-.overlay{
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-display:flex;
-align-items:flex-start;
-justify-content:flex-start;
-padding:15px;
-box-sizing:border-box;
-background:linear-gradient(to bottom, rgba(0,0,0,0.35), rgba(0,0,0,0));
-}
-
-/* LOGO */
+/* Logo small left side */
 .logo{
-width:70px;
-background:white;
-padding:5px;
-border-radius:10px;
+    position:absolute;
+    top:20px;
+    left:20px;
+    width:70px;
 }
 
-/* TEXT */
-.text{
-position:absolute;
-top:20px;
-left:50%;
-transform:translateX(-50%);
-text-align:center;
+/* Right side big headline */
+.hero-text{
+    position:absolute;
+    right:20px;
+    top:80px;
+    text-align:right;
 }
 
-.text h1{
-color:white;
-font-size:36px;
-margin:0;
-text-shadow:2px 2px 6px black;
-letter-spacing:2px;
+.hero-text h1{
+    font-size:42px;
+    color:white;
+    text-shadow:2px 2px 6px black;
 }
 
-.text p{
-color:#ffd400;
-font-size:20px;
-font-weight:bold;
-margin-top:5px;
-text-shadow:1px 1px 4px black;
+.hero-text p{
+    font-size:20px;
+    color:yellow;
+    font-weight:bold;
 }
 
-/* FLAVOURS */
+/* CONTENT */
 .content{
-padding:10px;
+    width:100%;
+    padding:15px;
 }
 
 .title{
-text-align:center;
-font-size:24px;
-font-weight:bold;
-margin:20px 0 15px;
-color:#0077b6;
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
+    color:#0077b6;
+    margin:15px 0;
 }
 
+/* FLAVOUR BOX */
 .box{
-display:flex;
-margin:12px 5px;
-padding:12px;
-background:#f3fbff;
-border-radius:14px;
-align-items:center;
-box-shadow:0 2px 6px rgba(0,0,0,0.08);
+    background:white;
+    border-radius:12px;
+    padding:12px;
+    display:flex;
+    align-items:center;
+    margin-bottom:15px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.15);
 }
 
 .box img{
-width:85px;
-margin-right:12px;
-border-radius:12px;
+    width:90px;
+    margin-right:12px;
 }
 
 .box h3{
-margin:0;
-color:#ff7a00;
-font-size:18px;
+    color:#ff7a00;
+    font-size:20px;
 }
 
 .box p{
-margin-top:6px;
-font-size:14px;
-color:#333;
+    color:#333;
+    font-size:14px;
 }
 
 /* DISTRIBUTOR */
 .distributor{
-background:#2fa8ff;
-color:white;
-text-align:center;
-padding:25px 10px;
-margin-top:20px;
+    background:#0077b6;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
 }
 
 .distributor h2{
-margin:0 0 10px;
-font-size:22px;
+    font-size:22px;
+}
+
+.distributor p{
+    margin-top:8px;
 }
 </style>
 </head>
 
 <body>
 
-<div class="main">
+<!-- HERO -->
+<div class="hero">
+    <img src="logo.jpg" class="logo">
 
-<!-- BANNER -->
-<div class="banner">
-<img src="newbanner.jpg">
-
-<div class="overlay">
-<img src="logo.jpg" class="logo">
-
-<div class="text">
-<h1>MR SODA</h1>
-<p>TASTE THE FIZZZ!</p>
-</div>
-</div>
+    <div class="hero-text">
+        <h1>MR SODA</h1>
+        <p>TASTE THE FIZZZ!</p>
+    </div>
 </div>
 
+<!-- CONTENT -->
 <div class="content">
 
 <div class="title">OUR FLAVOURS</div>
 
-<!-- Mint -->
 <div class="box">
-<img src="Mint..jpg">
-<div>
-<h3>Mint Mojito</h3>
-<p>Fresh mint flavour with strong fizz. Perfect refreshing goli soda.</p>
-</div>
+    <img src="Mint..jpg">
+    <div>
+        <h3>Mint Mojito</h3>
+        <p>Fresh mint flavour with strong fizz. Perfect refreshing goli soda.</p>
+    </div>
 </div>
 
-<!-- Jeera -->
 <div class="box">
-<img src="Jeera.jpg">
-<div>
-<h3>Jeera Masala</h3>
-<p>Traditional jeera masala taste with strong desi flavour and fizz.</p>
-</div>
+    <img src="Jeera.jpg">
+    <div>
+        <h3>Jeera Masala</h3>
+        <p>Traditional jeera masala taste with strong desi flavour and fizz.</p>
+    </div>
 </div>
 
-<!-- Lemon -->
 <div class="box">
-<img src="lemon.jpg">
-<div>
-<h3>Lemon</h3>
-<p>Sharp and refreshing lemon flavour with instant energy.</p>
-</div>
+    <img src="lemon.jpg">
+    <div>
+        <h3>Lemon</h3>
+        <p>Sharp and refreshing lemon flavour with instant energy.</p>
+    </div>
 </div>
 
-<!-- Orange -->
 <div class="box">
-<img src="orange.jpg">
-<div>
-<h3>Orange</h3>
-<p>Juicy orange taste with balanced sweetness for all age.</p>
-</div>
+    <img src="orange.jpg">
+    <div>
+        <h3>Orange</h3>
+        <p>Juicy orange taste with balanced sweetness for all age.</p>
+    </div>
 </div>
 
-<!-- Fruit -->
 <div class="box">
-<img src="fruit.jpg">
-<div>
-<h3>Fruit Beer (Non-Alcoholic)</h3>
-<p>Rich fruity taste, smooth fizz, completely non-alcoholic.</p>
-</div>
-</div>
-
+    <img src="fruit.jpg">
+    <div>
+        <h3>Fruit Beer (Non-Alcoholic)</h3>
+        <p>Rich fruity taste, smooth fizz, completely non-alcoholic.</p>
+    </div>
 </div>
 
+</div>
+
+<!-- DISTRIBUTOR -->
 <div class="distributor">
-<h2>Become a Distributor of MR SODA</h2>
-<p>High Demand | Great Margins | Strong Brand Support</p>
-<p><b>Contact:</b> mr.sodaudaipur@gmail.com</p>
-</div>
-
+    <h2>Become a Distributor of MR SODA</h2>
+    <p>High Demand | Great Margins | Strong Brand Support</p>
+    <p><b>Contact:</b> mr.sodaudaipur@gmail.com</p>
 </div>
 
 </body>
