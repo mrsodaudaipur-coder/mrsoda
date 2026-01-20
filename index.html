@@ -8,11 +8,11 @@
 body{
 margin:0;
 font-family: Arial, sans-serif;
-background:#eaf7ff;
+background:#cfeeff;
 }
 
 .main{
-max-width:420px;
+max-width:380px;
 margin:auto;
 background:white;
 }
@@ -21,36 +21,35 @@ background:white;
 .banner{
 background:#6ec8ff;
 text-align:center;
-padding:10px 8px 20px;
+padding:10px;
 }
 
 .banner img{
 width:100%;
 border-radius:12px;
-object-fit:cover;
 }
 
-.headline{
-position:absolute;
-top:30px;
-left:0;
-right:0;
-text-align:center;
-color:white;
+/* HEADLINE DESIGN */
+.banner h1{
+color:#ffffff;
+font-size:42px;
+margin:10px 0 5px;
+background:#ff7a00;
+display:inline-block;
+padding:8px 20px;
+border-radius:10px;
+letter-spacing:2px;
 }
 
-.headline h1{
-font-size:36px;
-margin:0;
-text-shadow:0 2px 5px rgba(0,0,0,0.5);
-}
-
-.headline p{
-font-size:20px;
+.banner p{
+color:#ffffff;
+font-size:22px;
 font-weight:bold;
-color:#ffe600;
-margin:5px 0 0;
-text-shadow:0 2px 5px rgba(0,0,0,0.5);
+margin-top:10px;
+background:#00000090;
+display:inline-block;
+padding:6px 18px;
+border-radius:25px;
 }
 
 /* FLAVOURS */
@@ -58,23 +57,23 @@ text-shadow:0 2px 5px rgba(0,0,0,0.5);
 text-align:center;
 font-size:24px;
 font-weight:bold;
-margin:20px 0 15px;
-color:#0077aa;
+margin:18px 0 10px;
+color:#333;
 }
 
 .box{
 display:flex;
-margin:12px;
-padding:12px;
+margin:10px;
+padding:10px;
 background:#f3fbff;
 border-radius:12px;
 align-items:center;
 }
 
 .box img{
-width:70px;
+width:90px;
 margin-right:12px;
-border-radius:8px;
+border-radius:10px;
 }
 
 .box h3{
@@ -84,17 +83,23 @@ font-size:18px;
 }
 
 .box p{
-margin-top:5px;
+margin-top:6px;
 font-size:14px;
+color:#333;
 }
 
 /* DISTRIBUTOR */
 .distributor{
-background:#0aa0d8;
+background:#3aaeff;
 color:white;
 text-align:center;
 padding:25px 10px;
-margin-top:20px;
+margin-top:15px;
+}
+
+.distributor h2{
+margin:0 0 10px;
+font-size:22px;
 }
 </style>
 </head>
@@ -104,33 +109,32 @@ margin-top:20px;
 <div class="main">
 
 <div class="banner">
-<div style="position:relative;">
 <img src="bottle.jpg">
-<div class="headline">
 <h1>MR SODA</h1>
 <p>TASTE THE FIZZZ!</p>
-</div>
-</div>
 </div>
 
 <div class="title">OUR FLAVOURS</div>
 
+<!-- Mint -->
 <div class="box">
-<img src="mint.jpg">
+<img src="Mint.jpg">
 <div>
 <h3>Mint Mojito</h3>
 <p>Fresh mint flavour with strong fizz. Perfect refreshing goli soda.</p>
 </div>
 </div>
 
+<!-- Jeera -->
 <div class="box">
-<img src="jeera.jpg">
+<img src="Jeera.jpg">
 <div>
 <h3>Jeera Masala</h3>
 <p>Traditional jeera masala taste with strong desi flavour and fizz.</p>
 </div>
 </div>
 
+<!-- Lemon -->
 <div class="box">
 <img src="lemon.jpg">
 <div>
@@ -139,6 +143,7 @@ margin-top:20px;
 </div>
 </div>
 
+<!-- Orange -->
 <div class="box">
 <img src="orange.jpg">
 <div>
@@ -147,6 +152,7 @@ margin-top:20px;
 </div>
 </div>
 
+<!-- Fruit Beer -->
 <div class="box">
 <img src="fruit.jpg">
 <div>
