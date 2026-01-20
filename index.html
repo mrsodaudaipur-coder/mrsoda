@@ -17,38 +17,63 @@ margin:auto;
 background:white;
 }
 
-/* TOP BANNER */
+/* BANNER */
 .banner{
-background:#6ec8ff;
-text-align:center;
-padding:10px;
+position:relative;
+height:280px;
+overflow:hidden;
+border-radius:0 0 15px 15px;
 }
 
 .banner img{
 width:100%;
-border-radius:12px;
+height:100%;
+object-fit:cover;
+object-position:center bottom;
 }
 
-/* HEADLINE DESIGN */
-.banner h1{
-color:#ffffff;
-font-size:42px;
-margin:10px 0 5px;
+/* OVERLAY CONTENT */
+.overlay{
+position:absolute;
+top:15px;
+left:10px;
+right:10px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+/* LOGO */
+.logo{
+width:70px;
+border-radius:10px;
+background:white;
+padding:5px;
+}
+
+/* HEADLINE */
+.text{
+text-align:right;
+}
+
+.text h1{
+margin:0;
+font-size:40px;
+color:white;
 background:#ff7a00;
 display:inline-block;
-padding:8px 20px;
+padding:6px 18px;
 border-radius:10px;
-letter-spacing:2px;
 }
 
-.banner p{
-color:#ffffff;
-font-size:22px;
+.text p{
+margin-top:8px;
+font-size:20px;
 font-weight:bold;
-margin-top:10px;
+color:white;
 background:#00000090;
 display:inline-block;
-padding:6px 18px;
+padding:6px 16px;
 border-radius:25px;
 }
 
@@ -108,17 +133,25 @@ font-size:22px;
 
 <div class="main">
 
+<!-- BANNER -->
 <div class="banner">
 <img src="bottle.jpg">
+
+<div class="overlay">
+<img src="logo.png" class="logo">
+
+<div class="text">
 <h1>MR SODA</h1>
 <p>TASTE THE FIZZZ!</p>
+</div>
+</div>
 </div>
 
 <div class="title">OUR FLAVOURS</div>
 
 <!-- Mint -->
 <div class="box">
-<img src="Mint.jpg">
+<img src="Mint..jpg">
 <div>
 <h3>Mint Mojito</h3>
 <p>Fresh mint flavour with strong fizz. Perfect refreshing goli soda.</p>
