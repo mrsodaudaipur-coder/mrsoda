@@ -1,111 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
-<title>Mr Soda</title>
+<title>MR SODA</title>
+
 <style>
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #bfe9ff;
-    color: white;
+    background: linear-gradient(#7ecbff, #cdeeff);
+}
+
+.container {
+    max-width: 420px;
+    margin: auto;
+    background: white;
+}
+
+.top {
+    background: url("bottle.jpg") center/cover no-repeat;
+    padding: 40px 10px;
     text-align: center;
+    color: white;
 }
 
-header {
-    padding: 20px;
-}
-
-h1 {
+.top h1 {
     font-size: 36px;
-    margin-bottom: 5px;
+    margin: 0;
 }
 
-.tagline {
-    font-size: 20px;
+.top p {
+    font-size: 18px;
     font-weight: bold;
 }
 
-.hero img {
-    width: 220px;
+.section-title {
+    text-align: center;
+    font-size: 22px;
+    margin: 20px 0 10px;
+    font-weight: bold;
+}
+
+.flavour {
+    display: flex;
+    background: #f5faff;
+    margin: 12px;
+    border-radius: 12px;
+    padding: 10px;
+    align-items: center;
+}
+
+.flavour img {
+    width: 90px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.flavour h3 {
+    margin: 0;
+    color: #ff7b00;
+}
+
+.flavour p {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+.distributor {
+    background: #4bb2ff;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
     margin-top: 20px;
 }
 
-.section {
-    padding: 30px 10px;
+.distributor h2 {
+    margin: 0 0 10px;
 }
 
-.flavours {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.flavour-box {
-    background: rgba(255,255,255,0.15);
-    padding: 15px;
-    border-radius: 12px;
-    width: 140px;
-}
-
-.flavour-box img {
-    width: 100px;
-}
-
-.footer {
-    margin-top: 30px;
-    font-size: 16px;
+.distributor p {
+    margin: 6px 0;
+    font-size: 15px;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-    <h1>MR SODA</h1>
-    <div class="tagline">TASTE THE FIZZZ!</div>
-</header>
+<div class="container">
 
-<div class="hero">
-    <img src="bottle.jpg" alt="Mr Soda Bottle">
+<div class="top">
+    <h1>MR SODA</h1>
+    <p>TASTE THE FIZZZ!</p>
 </div>
 
-<div class="section">
-    <h2>Our Flavours / हमारे फ्लेवर</h2>
+<div class="section-title">OUR FLAVOURS</div>
 
-    <div class="flavours">
-        <div class="flavour-box">
-            <img src="bottle.jpg">
-            <p>Mint Mojito</p>
-        </div>
-
-        <div class="flavour-box">
-            <img src="bottle.jpg">
-            <p>Orange</p>
-        </div>
-
-        <div class="flavour-box">
-            <img src="bottle.jpg">
-            <p>Jira</p>
-        </div>
-
-        <div class="flavour-box">
-            <img src="bottle.jpg">
-            <p>Lemon</p>
-        </div>
-
-        <div class="flavour-box">
-            <img src="bottle.jpg">
-            <p>Fruit Beer</p>
-        </div>
+<div class="flavour">
+    <img src="bottle.jpg">
+    <div>
+        <h3>Mint Mojito</h3>
+        <p>Fresh mint flavour with light sweetness and strong fizz. Perfect refreshing goli soda.</p>
     </div>
 </div>
 
-<div class="footer">
-    <p><b>Distributor Enquiry Available</b></p>
-    <p>Contact: mr.sodaudaipur@gmail.com</p>
+<div class="flavour">
+    <img src="bottle.jpg">
+    <div>
+        <h3>Jeera Masala</h3>
+        <p>Traditional jeera masala taste with desi strong flavour and fizzy feel.</p>
+    </div>
+</div>
+
+<div class="flavour">
+    <img src="bottle.jpg">
+    <div>
+        <h3>Lemon</h3>
+        <p>Sharp and refreshing lemon flavour. Instant energy with fizzy punch.</p>
+    </div>
+</div>
+
+<div class="flavour">
+    <img src="bottle.jpg">
+    <div>
+        <h3>Orange</h3>
+        <p>Juicy orange taste with balanced sweetness. Kids aur adults dono ke liye perfect.</p>
+    </div>
+</div>
+
+<div class="flavour">
+    <img src="bottle.jpg">
+    <div>
+        <h3>Fruit Beer (Non-Alcoholic)</h3>
+        <p>Rich fruity taste with smooth fizz. Completely non-alcoholic and refreshing.</p>
+    </div>
+</div>
+
+<div class="distributor">
+    <h2>Become a Distributor of MR SODA</h2>
+    <p>High Demand | Great Margins | Strong Brand Support</p>
+    <p><b>Contact:</b> mr.sodaudaipur@gmail.com</p>
+</div>
+
 </div>
 
 </body>
 </html>
+
