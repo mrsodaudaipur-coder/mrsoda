@@ -8,7 +8,7 @@
 body{
 margin:0;
 font-family: Arial, sans-serif;
-background:#9fdcff;
+background:#e9f7ff;
 }
 
 .main{
@@ -19,50 +19,62 @@ background:white;
 
 /* TOP BANNER */
 .banner{
-background:#6ec8ff;
+position:relative;
 text-align:center;
-padding:15px;
 }
 
 .banner img{
 width:100%;
-border-radius:12px;
+border-radius:0;
 }
 
-.banner h1{
+.banner-text{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
 color:white;
-font-size:32px;
-margin:10px 0 5px;
+text-align:center;
+text-shadow:0 2px 5px black;
 }
 
-.banner p{
-color:white;
-font-size:18px;
-font-weight:bold;
+.banner-text h1{
+font-size:36px;
 margin:0;
+}
+
+.banner-text p{
+font-size:20px;
+font-weight:bold;
+margin-top:5px;
+color:#ffe600;
 }
 
 /* FLAVOURS */
 .title{
 text-align:center;
-font-size:22px;
+font-size:24px;
 font-weight:bold;
 margin:20px 0 10px;
+color:#0077b6;
 }
 
 .box{
 display:flex;
 margin:12px;
 padding:12px;
-background:#f3fbff;
+background:#f7fbff;
 border-radius:12px;
 align-items:center;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
 }
 
 .box img{
-width:80px;
-margin-right:10px;
-border-radius:10px;
+width:90px;
+margin-right:12px;
+border-radius:12px;
+background:white;
+padding:5px;
 }
 
 .box h3{
@@ -77,15 +89,21 @@ font-size:14px;
 
 /* DISTRIBUTOR */
 .distributor{
-background:#3aaeff;
+background:#0096c7;
 color:white;
 text-align:center;
-padding:25px 10px;
-margin-top:20px;
+padding:30px 12px;
+margin-top:25px;
 }
 
 .distributor h2{
 margin:0 0 10px;
+font-size:22px;
+}
+
+.distributor p{
+margin:6px 0;
+font-size:15px;
 }
 </style>
 </head>
@@ -94,14 +112,18 @@ margin:0 0 10px;
 
 <div class="main">
 
+<!-- MAIN BOTTLE PHOTO -->
 <div class="banner">
 <img src="bottle.jpg">
+<div class="banner-text">
 <h1>MR SODA</h1>
 <p>TASTE THE FIZZZ!</p>
+</div>
 </div>
 
 <div class="title">OUR FLAVOURS</div>
 
+<!-- MINT -->
 <div class="box">
 <img src="mint.jpg">
 <div>
@@ -110,6 +132,7 @@ margin:0 0 10px;
 </div>
 </div>
 
+<!-- JEERA -->
 <div class="box">
 <img src="jeera.jpg">
 <div>
@@ -118,6 +141,7 @@ margin:0 0 10px;
 </div>
 </div>
 
+<!-- LEMON -->
 <div class="box">
 <img src="lemon.jpg">
 <div>
@@ -126,6 +150,7 @@ margin:0 0 10px;
 </div>
 </div>
 
+<!-- ORANGE -->
 <div class="box">
 <img src="orange.jpg">
 <div>
@@ -134,6 +159,7 @@ margin:0 0 10px;
 </div>
 </div>
 
+<!-- FRUIT BEER -->
 <div class="box">
 <img src="fruit.jpg">
 <div>
@@ -142,9 +168,11 @@ margin:0 0 10px;
 </div>
 </div>
 
+<!-- DISTRIBUTOR SECTION -->
 <div class="distributor">
 <h2>Become a Distributor of MR SODA</h2>
 <p>High Demand | Great Margins | Strong Brand Support</p>
+<p>Fast Moving Product | Trusted Local Brand</p>
 <p><b>Contact:</b> mr.sodaudaipur@gmail.com</p>
 </div>
 
