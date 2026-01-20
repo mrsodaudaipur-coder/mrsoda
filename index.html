@@ -8,74 +8,73 @@
 body{
 margin:0;
 font-family: Arial, sans-serif;
-background:white;
+background:#eaf7ff;
 }
 
 .main{
-max-width:100%;
+max-width:420px;
 margin:auto;
 background:white;
 }
 
 /* TOP BANNER */
 .banner{
-position:relative;
+background:#6ec8ff;
 text-align:center;
-width:100%;
+padding:10px 8px 20px;
 }
 
 .banner img{
 width:100%;
-display:block;
+border-radius:12px;
+object-fit:cover;
 }
 
-.banner-text{
+.headline{
 position:absolute;
-top:15%;
-left:50%;
-transform:translateX(-50%);
-color:white;
+top:30px;
+left:0;
+right:0;
 text-align:center;
-text-shadow:0 3px 6px black;
+color:white;
 }
 
-.banner-text h1{
-font-size:40px;
+.headline h1{
+font-size:36px;
 margin:0;
+text-shadow:0 2px 5px rgba(0,0,0,0.5);
 }
 
-.banner-text p{
-font-size:22px;
+.headline p{
+font-size:20px;
 font-weight:bold;
-margin-top:5px;
 color:#ffe600;
+margin:5px 0 0;
+text-shadow:0 2px 5px rgba(0,0,0,0.5);
 }
 
 /* FLAVOURS */
 .title{
 text-align:center;
-font-size:26px;
+font-size:24px;
 font-weight:bold;
-margin:20px 0 10px;
-color:#0077b6;
+margin:20px 0 15px;
+color:#0077aa;
 }
 
 .box{
 display:flex;
 margin:12px;
 padding:12px;
-background:#f9fcff;
+background:#f3fbff;
 border-radius:12px;
 align-items:center;
-box-shadow:0 2px 5px rgba(0,0,0,0.1);
 }
 
 .box img{
-width:100px;
+width:70px;
 margin-right:12px;
-border-radius:10px;
-background:white;
-padding:5px;
+border-radius:8px;
 }
 
 .box h3{
@@ -91,21 +90,11 @@ font-size:14px;
 
 /* DISTRIBUTOR */
 .distributor{
-background:#0096c7;
+background:#0aa0d8;
 color:white;
 text-align:center;
-padding:30px 12px;
-margin-top:25px;
-}
-
-.distributor h2{
-margin:0 0 10px;
-font-size:22px;
-}
-
-.distributor p{
-margin:6px 0;
-font-size:15px;
+padding:25px 10px;
+margin-top:20px;
 }
 </style>
 </head>
@@ -114,18 +103,18 @@ font-size:15px;
 
 <div class="main">
 
-<!-- MAIN BOTTLE PHOTO -->
 <div class="banner">
+<div style="position:relative;">
 <img src="bottle.jpg">
-<div class="banner-text">
+<div class="headline">
 <h1>MR SODA</h1>
 <p>TASTE THE FIZZZ!</p>
+</div>
 </div>
 </div>
 
 <div class="title">OUR FLAVOURS</div>
 
-<!-- MINT -->
 <div class="box">
 <img src="mint.jpg">
 <div>
@@ -134,7 +123,6 @@ font-size:15px;
 </div>
 </div>
 
-<!-- JEERA -->
 <div class="box">
 <img src="jeera.jpg">
 <div>
@@ -143,7 +131,6 @@ font-size:15px;
 </div>
 </div>
 
-<!-- LEMON -->
 <div class="box">
 <img src="lemon.jpg">
 <div>
@@ -152,7 +139,6 @@ font-size:15px;
 </div>
 </div>
 
-<!-- ORANGE -->
 <div class="box">
 <img src="orange.jpg">
 <div>
@@ -161,7 +147,6 @@ font-size:15px;
 </div>
 </div>
 
-<!-- FRUIT BEER -->
 <div class="box">
 <img src="fruit.jpg">
 <div>
@@ -170,11 +155,9 @@ font-size:15px;
 </div>
 </div>
 
-<!-- DISTRIBUTOR SECTION -->
 <div class="distributor">
 <h2>Become a Distributor of MR SODA</h2>
 <p>High Demand | Great Margins | Strong Brand Support</p>
-<p>Fast Moving Product | Trusted Local Brand</p>
 <p><b>Contact:</b> mr.sodaudaipur@gmail.com</p>
 </div>
 
