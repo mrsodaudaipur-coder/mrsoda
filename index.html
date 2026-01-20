@@ -1,12 +1,8 @@
-
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MR SODA</title>
-
-<style>
+<title>MR SODA</title><style>
 *{
     margin:0;
     padding:0;
@@ -15,7 +11,17 @@
 }
 
 body{
-    background:#eaf7ff;
+    background:#dff4ff;
+}
+
+/* TOP INFO BAR */
+.top-bar{
+    width:100%;
+    background:#000;
+    color:white;
+    font-size:14px;
+    padding:8px 12px;
+    text-align:center;
 }
 
 /* HERO SECTION */
@@ -26,37 +32,32 @@ body{
     position:relative;
 }
 
-/* Logo top-left small */
+/* Logo small left corner */
 .logo{
     position:absolute;
-    top:12px;
-    left:12px;
+    top:10px;
+    left:10px;
     width:50px;
-    background:white;
-    padding:5px;
-    border-radius:10px;
 }
 
-/* Headline top-right */
+/* Headline box right top */
 .hero-text{
     position:absolute;
-    top:15px;
-    right:15px;
-    background:linear-gradient(135deg, #ff7a00, #000000);
+    right:12px;
+    top:20px;
+    background:linear-gradient(135deg,#ff7a00,#000);
     padding:14px 20px;
-    border-radius:16px;
-    text-align:right;
-    box-shadow:0 4px 10px rgba(0,0,0,0.4);
+    border-radius:14px;
+    text-align:center;
 }
 
 .hero-text h1{
     font-size:32px;
     color:white;
-    margin-bottom:6px;
 }
 
 .hero-text p{
-    font-size:18px;
+    font-size:16px;
     color:yellow;
     font-weight:bold;
 }
@@ -69,32 +70,31 @@ body{
 
 .title{
     text-align:center;
-    font-size:26px;
+    font-size:28px;
     font-weight:bold;
     color:#0077b6;
-    margin:20px 0;
+    margin:15px 0;
 }
 
 /* FLAVOUR BOX */
 .box{
     background:white;
-    border-radius:14px;
-    padding:14px;
+    border-radius:12px;
+    padding:12px;
     display:flex;
     align-items:center;
-    margin-bottom:18px;
-    box-shadow:0 3px 8px rgba(0,0,0,0.15);
+    margin-bottom:15px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.15);
 }
 
 .box img{
     width:90px;
-    margin-right:14px;
+    margin-right:12px;
 }
 
 .box h3{
     color:#ff7a00;
     font-size:20px;
-    margin-bottom:6px;
 }
 
 .box p{
@@ -102,13 +102,38 @@ body{
     font-size:14px;
 }
 
+/* WHY CHOOSE SECTION */
+.why{
+    background:white;
+    margin:20px 15px;
+    padding:20px;
+    border-radius:14px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.15);
+}
+
+.why h2{
+    text-align:center;
+    color:#ff7a00;
+    margin-bottom:15px;
+}
+
+.why ul{
+    list-style:none;
+}
+
+.why li{
+    font-size:16px;
+    margin:10px 0;
+    color:#333;
+}
+
 /* DISTRIBUTOR */
 .distributor{
     background:#0077b6;
     color:white;
     text-align:center;
-    padding:22px;
-    margin-top:25px;
+    padding:20px;
+    margin-top:20px;
 }
 
 .distributor h2{
@@ -119,114 +144,70 @@ body{
     margin-top:8px;
 }
 
-/* Mobile polish */
-@media(max-width:600px){
-    .hero{
-        height:230px;
-    }
-    .hero-text h1{
-        font-size:26px;
-    }
-    .hero-text p{
-        font-size:16px;
-    }
+/* FOOTER */
+.footer{
+    background:#000;
+    color:white;
+    text-align:center;
+    padding:15px;
+    font-size:14px;
 }
-</style>
-</head>
 
-<body>
-
-<!-- HERO -->
-<div class="hero">
-    <img src="logo.jpg" class="logo">
-
-    <div class="hero-text">
-        <h1>MR SODA</h1>
-        <p>TASTE THE FIZZZ!</p>
-    </div>
+.footer span{
+    color:#ff7a00;
+    font-weight:bold;
+}
+</style></head><body><!-- TOP INFO BAR --><div class="top-bar">
+✔ Distributor Enquiry Open | 📧 mr.sodaudaipur@gmail.com
+</div><!-- HERO --><div class="hero">
+    <img src="logo.jpg" class="logo"><div class="hero-text">
+    <h1>MR SODA</h1>
+    <p>TASTE THE FIZZZ!</p>
 </div>
 
-<!-- CONTENT -->
-<div class="content">
-
-<div class="title">OUR FLAVOURS</div>
-
-<div class="box">
+</div><!-- CONTENT --><div class="content"><div class="title">OUR FLAVOURS</div><div class="box">
     <img src="Mint..jpg">
     <div>
         <h3>Mint Mojito</h3>
         <p>Fresh mint flavour with strong fizz. Perfect refreshing goli soda.</p>
     </div>
-</div>
-
-<div class="box">
+</div><div class="box">
     <img src="Jeera.jpg">
     <div>
         <h3>Jeera Masala</h3>
         <p>Traditional jeera masala taste with strong desi flavour and fizz.</p>
     </div>
-</div>
-
-<div class="box">
+</div><div class="box">
     <img src="lemon.jpg">
     <div>
         <h3>Lemon</h3>
         <p>Sharp and refreshing lemon flavour with instant energy.</p>
     </div>
-</div>
-
-<div class="box">
+</div><div class="box">
     <img src="orange.jpg">
     <div>
         <h3>Orange</h3>
         <p>Juicy orange taste with balanced sweetness for all age.</p>
     </div>
-</div>
-
-<div class="box">
+</div><div class="box">
     <img src="fruit.jpg">
     <div>
         <h3>Fruit Beer (Non-Alcoholic)</h3>
         <p>Rich fruity taste, smooth fizz, completely non-alcoholic.</p>
     </div>
-</div>
-
-</div>
-    <div class="distributor-btn-area">
-    <a href="mailto:mr.sodaudaipur@gmail.com" class="distributor-btn">
-        Become a Distributor
-    </a>
-    </div>
-    /* Distributor Button */
-.distributor-btn-area{
-    text-align:center;
-    margin:25px 0;
-}
-
-.distributor-btn{
-    background:linear-gradient(135deg, #ff7a00, #ffb000);
-    color:white;
-    padding:14px 30px;
-    font-size:20px;
-    font-weight:bold;
-    border-radius:30px;
-    text-decoration:none;
-    display:inline-block;
-    box-shadow:0 6px 15px rgba(0,0,0,0.25);
-    transition:0.3s;
-}
-
-.distributor-btn:hover{
-    transform:scale(1.05);
-    box-shadow:0 10px 25px rgba(0,0,0,0.35);
-}
-
-<!-- DISTRIBUTOR -->
-<div class="distributor">
+</div></div><!-- WHY CHOOSE --><div class="why">
+    <h2>Why Choose MR SODA?</h2>
+    <ul>
+        <li>✔ Fresh & Premium Flavours</li>
+        <li>✔ Strong Long-Lasting Fizz</li>
+        <li>✔ Best Distributor Margins</li>
+        <li>✔ Trusted Growing Brand</li>
+    </ul>
+</div><!-- DISTRIBUTOR --><div class="distributor">
     <h2>Become a Distributor of MR SODA</h2>
     <p>High Demand | Great Margins | Strong Brand Support</p>
     <p><b>Contact:</b> mr.sodaudaipur@gmail.com</p>
-</div>
-
-</body>
+</div><!-- FOOTER --><div class="footer">
+© 2026 <span>MR SODA</span> | TASTE THE FIZZZ!
+</div></body>
 </html>
