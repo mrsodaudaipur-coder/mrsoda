@@ -8,11 +8,11 @@
 body{
 margin:0;
 font-family: Arial, sans-serif;
-background:#e9f7ff;
+background:white;
 }
 
 .main{
-max-width:380px;
+max-width:100%;
 margin:auto;
 background:white;
 }
@@ -21,30 +21,31 @@ background:white;
 .banner{
 position:relative;
 text-align:center;
+width:100%;
 }
 
 .banner img{
 width:100%;
-border-radius:0;
+display:block;
 }
 
 .banner-text{
 position:absolute;
-top:50%;
+top:15%;
 left:50%;
-transform:translate(-50%,-50%);
+transform:translateX(-50%);
 color:white;
 text-align:center;
-text-shadow:0 2px 5px black;
+text-shadow:0 3px 6px black;
 }
 
 .banner-text h1{
-font-size:36px;
+font-size:40px;
 margin:0;
 }
 
 .banner-text p{
-font-size:20px;
+font-size:22px;
 font-weight:bold;
 margin-top:5px;
 color:#ffe600;
@@ -53,7 +54,7 @@ color:#ffe600;
 /* FLAVOURS */
 .title{
 text-align:center;
-font-size:24px;
+font-size:26px;
 font-weight:bold;
 margin:20px 0 10px;
 color:#0077b6;
@@ -63,16 +64,16 @@ color:#0077b6;
 display:flex;
 margin:12px;
 padding:12px;
-background:#f7fbff;
+background:#f9fcff;
 border-radius:12px;
 align-items:center;
-box-shadow:0 2px 6px rgba(0,0,0,0.1);
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
 }
 
 .box img{
-width:90px;
+width:100px;
 margin-right:12px;
-border-radius:12px;
+border-radius:10px;
 background:white;
 padding:5px;
 }
@@ -80,6 +81,7 @@ padding:5px;
 .box h3{
 margin:0;
 color:#ff7a00;
+font-size:18px;
 }
 
 .box p{
@@ -180,4 +182,3 @@ font-size:15px;
 
 </body>
 </html>
-
