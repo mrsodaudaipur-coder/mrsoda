@@ -13,81 +13,72 @@
     font-family: Arial, sans-serif;
 }
 
-html, body{
+html,body{
     width:100%;
-    overflow-x:hidden;
+    overflow-x:hidden;   /* side space रोकने के लिए */
+    background:#dff4ff;
 }
 
-body{
-    background:#eaf7ff;
-}
-
-/* HERO / BANNER */
+/* HERO SECTION */
 .hero{
     width:100%;
-    height:300px;
-    background:url("newbanner.jpg")center/cover;
+    height:240px;   /* mobile पर कम height */
+    background:url("newbanner.jpg") center/cover no-repeat;
     position:relative;
 }
 
-/* LOGO LEFT SMALL */
+/* Logo small left corner */
 .logo{
     position:absolute;
     top:15px;
     left:15px;
-    width:60px;
-    background:white;
-    padding:5px;
-    border-radius:10px;
+    width:50px;     /* छोटा neat logo */
 }
 
-/* HEADLINE RIGHT WITH BACKGROUND */
+/* Headline box right side */
 .hero-text{
     position:absolute;
     right:20px;
-    top:50px;
-    background:linear-gradient(135deg, black, #ff7a00);
-    padding:18px 25px;
+    top:40px;      /* ऊपर उठा दिया */
+    background:linear-gradient(135deg, black, orange);
+    padding:14px 22px;
     border-radius:14px;
-    text-align:right;
     box-shadow:0 4px 10px rgba(0,0,0,0.4);
+    text-align:right;
 }
 
 .hero-text h1{
-    font-size:42px;
+    font-size:38px;
     color:white;
-    margin:0;
-    letter-spacing:3px;
-    text-shadow:2px 2px 6px black;
+    margin-bottom:4px;
+    letter-spacing:1px;
 }
 
 .hero-text p{
-    font-size:22px;
+    font-size:20px;
     color:yellow;
-    margin-top:5px;
     font-weight:bold;
 }
 
 /* CONTENT */
 .content{
     width:100%;
-    padding:20px 15px;
+    padding:15px;
 }
 
-/* TITLE */
 .title{
     text-align:center;
     font-size:30px;
     font-weight:bold;
     color:#0077b6;
-    margin:20px 0;
+    margin:18px 0;
 }
 
 /* FLAVOUR BOX */
 .box{
     background:white;
-    border-radius:16px;
-    padding:15px;
+    border-radius:14px;
+    padding:14px;
     display:flex;
     align-items:center;
     margin-bottom:18px;
@@ -96,44 +87,58 @@ body{
 
 .box img{
     width:95px;
-    margin-right:15px;
+    margin-right:14px;
 }
 
 .box h3{
     color:#ff7a00;
     font-size:22px;
+    margin-bottom:4px;
 }
 
 .box p{
     color:#333;
     font-size:14px;
-    margin-top:6px;
 }
 
-/* DISTRIBUTOR SECTION */
+/* DISTRIBUTOR */
 .distributor{
     background:#0077b6;
     color:white;
     text-align:center;
-    padding:30px 15px;
+    padding:24px 15px;
     margin-top:25px;
 }
 
 .distributor h2{
     font-size:24px;
-    margin-bottom:10px;
 }
 
 .distributor p{
-    margin-top:8px;
-    font-size:16px;
+    margin-top:10px;
+    font-size:15px;
+}
+
+/* Responsive safety */
+@media(max-width:600px){
+    .hero{
+        height:220px;   /* zoom पर भी छोटा रहे */
+    }
+
+    .hero-text h1{
+        font-size:32px;
+    }
+
+    .hero-text p{
+        font-size:18px;
+    }
 }
 </style>
 </head>
 
 <body>
 
-<!-- HERO SECTION -->
+<!-- HERO -->
 <div class="hero">
     <img src="logo.jpg" class="logo">
 
@@ -148,7 +153,6 @@ body{
 
 <div class="title">OUR FLAVOURS</div>
 
-<!-- Mint -->
 <div class="box">
     <img src="Mint..jpg">
     <div>
@@ -157,7 +161,6 @@ body{
     </div>
 </div>
 
-<!-- Jeera -->
 <div class="box">
     <img src="Jeera.jpg">
     <div>
@@ -166,7 +169,6 @@ body{
     </div>
 </div>
 
-<!-- Lemon -->
 <div class="box">
     <img src="lemon.jpg">
     <div>
@@ -175,7 +177,6 @@ body{
     </div>
 </div>
 
-<!-- Orange -->
 <div class="box">
     <img src="orange.jpg">
     <div>
@@ -184,7 +185,6 @@ body{
     </div>
 </div>
 
-<!-- Fruit Beer -->
 <div class="box">
     <img src="fruit.jpg">
     <div>
@@ -204,5 +204,3 @@ body{
 
 </body>
 </html>
-
-
