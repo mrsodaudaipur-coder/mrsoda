@@ -40,25 +40,39 @@ body{
 }
 
 /* Headline box */
-.hero-text{
-    position:absolute;
-    right:15px;
-    bottom:30px;
-    background:linear-gradient(135deg, orange, black);
-    padding:15px 25px;
-    border-radius:12px;
-    text-align:right;
+.headline-box {
+  position: absolute;
+  top: 15px;          /* bilkul upar */
+  right: 15px;        /* right side shift */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  z-index: 5;
 }
 
-.hero-text h1{
-    font-size:36px;
-    color:white;
+/* MR SODA highlight */
+.brand-name {
+  background: linear-gradient(135deg, #ff7a00, #ff9f1a);
+  color: #fff;
+  font-size: 26px;
+  font-weight: 800;
+  padding: 10px 18px;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
 
-.hero-text p{
-    font-size:18px;
-    color:yellow;
-    font-weight:bold;
+/* Taste the Fizzz background strip */
+.tagline {
+  background: rgba(0,0,0,0.75);
+  color: #ffd54a;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 8px;
+  letter-spacing: 0.5px;
+
 }
 
 /* CONTENT */
