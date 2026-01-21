@@ -1,239 +1,257 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
+<title>MR SODA | Taste The Fizzz!</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MR SODA</title><style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: Arial, sans-serif;
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #e9f7ff;
 }
 
-body{
-    background:#dff4ff;
+/* Top Info Bar */
+.top-bar {
+  background: #000;
+  color: #fff;
+  font-size: 13px;
+  padding: 6px 10px;
+  text-align: center;
 }
 
-/* TOP INFO BAR */
-.top-bar{
-    background:black;
-    color:white;
-    text-align:center;
-    padding:6px 10px;      /* slim bar */
-    font-size:13px;
+/* Banner */
+.banner {
+  position: relative;
+  width: 100%;
 }
 
-/* HERO SECTION */
-.hero{
-    width:100%;
-    height:300px;
-    background:url("newbanner.jpg") center/cover no-repeat;
-    position:relative;
+.banner img {
+  width: 100%;
+  display: block;
 }
 
-/* Logo */
-.logo{
-    position:absolute;
-    top:15px;
-    left:15px;
-    width:70px;
-}
-
-/* Headline box */
+/* Headline Box (Exact Style) */
 .headline-box {
   position: absolute;
-  top: 15px;          /* bilkul upar */
-  right: 15px;        /* right side shift */
+  top: 15px;
+  right: 15px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   gap: 6px;
-  z-index: 5;
 }
 
-/* MR SODA highlight */
-.brand-name {
-  background: linear-gradient(135deg, #ff7a00, #ff9f1a);
-  color: #fff;
+/* Orange strip */
+.brand-strip {
+  background: #f59b23;
+  color: #222;
+  font-weight: 900;
   font-size: 26px;
-  font-weight: 800;
-  padding: 10px 18px;
-  border-radius: 10px;
+  padding: 8px 18px;
   letter-spacing: 1px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
 
-/* Taste the Fizzz background strip */
-.tagline {
-  background: rgba(0,0,0,0.75);
-  color: #ffd54a;
+/* Black strip */
+.tagline-strip {
+  background: #000;
+  color: #fff;
+  font-weight: 900;
   font-size: 15px;
-  font-weight: 700;
-  padding: 6px 14px;
-  border-radius: 8px;
-  letter-spacing: 0.5px;
-
+  padding: 7px 16px;
+  letter-spacing: 1px;
 }
 
-/* CONTENT */
-.content{
-    width:100%;
-    padding:20px;
+/* Content */
+.container {
+  padding: 16px;
 }
 
-.title{
-    text-align:center;
-    font-size:28px;
-    font-weight:bold;
-    color:#0077b6;
-    margin:30px 0 15px 0;   /* spacing reduced */
+/* Our Flavours Title */
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  color: #0077b6;
+  margin: 18px 0 10px 0;
+  font-weight: 800;
 }
 
-/* FLAVOUR BOX */
-.box{
-    background:white;
-    border-radius:12px;
-    padding:12px;
-    display:flex;
-    align-items:center;
-    margin-bottom:15px;
-    box-shadow:0 2px 6px rgba(0,0,0,0.15);
+/* Flavour Cards */
+.card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 12px;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 14px;
 }
 
-.box img{
-    width:90px;
-    margin-right:12px;
+.card img {
+  width: 95px;
+  border-radius: 10px;
 }
 
-.box h3{
-    color:#ff7a00;
-    font-size:20px;
+.card h3 {
+  margin: 0;
+  color: #ff7a00;
 }
 
-.box p{
-    color:#333;
-    font-size:14px;
+.card p {
+  margin: 6px 0 0;
+  color: #333;
+  font-size: 14px;
 }
 
-/* WHY CHOOSE */
-.why{
-    background:white;
-    margin:20px;
-    padding:20px;
-    border-radius:12px;
-    box-shadow:0 2px 6px rgba(0,0,0,0.15);
+/* Why Choose */
+.why {
+  background: #fff;
+  border-radius: 14px;
+  padding: 16px;
+  margin-top: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.why h2{
-    text-align:center;
-    color:#0077b6;
-    margin-bottom:15px;
+.why h2 {
+  margin-top: 0;
+  color: #ff7a00;
 }
 
-.why ul{
-    list-style:none;
+.why ul {
+  padding-left: 18px;
 }
 
-.why li{
-    margin-bottom:10px;
-    font-size:15px;
+.why li {
+  margin-bottom: 8px;
+  font-weight: 600;
 }
 
-/* DISTRIBUTOR */
-.distributor{
-    background:#0077b6;
-    color:white;
-    text-align:center;
-    padding:25px 15px;
-    margin-top:30px;
+/* Distributor Section */
+.distributor {
+  background: #0077b6;
+  color: #fff;
+  text-align: center;
+  padding: 22px 12px;
+  margin-top: 20px;
 }
 
-.distributor h2{
-    font-size:22px;
+.distributor h2 {
+  margin: 0 0 10px 0;
 }
 
-.distributor p{
-    margin-top:8px;
+.distributor p {
+  margin: 6px 0;
 }
 
-.distributor-btn{
-    display:inline-block;
-    margin-top:15px;
-    padding:12px 30px;
-    background:orange;
-    color:black;
-    font-weight:bold;
-    border-radius:30px;
-    text-decoration:none;
-    transition:0.3s;
+.distributor a {
+  display: inline-block;
+  margin-top: 10px;
+  background: #ff7a00;
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 800;
 }
 
-.distributor-btn:hover{
-    background:black;
-    color:orange;
+/* Footer */
+.footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+  font-size: 13px;
 }
+</style>
+</head>
 
-/* FOOTER */
-.footer{
-    background:black;
-    color:white;
-    text-align:center;
-    padding:15px;
-    font-size:14px;
-}
+<body>
 
-</style></head><body><!-- TOP BAR --><div class="top-bar">
-  Premium Goli Soda Brand | Fresh • Fizzy • Desi
-</div><!-- HERO --><div class="hero">
-    <img src="logo.jpg" class="logo"><div class="hero-text">
-    <h1>MR SODA</h1>
-    <p>TASTE THE FIZZZ!</p>
+<!-- Top Info Bar -->
+<div class="top-bar">
+✔ Distributor Enquiry Open | ✉ mr.sodaudaipur@gmail.com
 </div>
 
-</div><!-- CONTENT --><div class="content"><div class="title">OUR FLAVOURS</div><div class="box">
-    <img src="Mint..jpg">
+<!-- Banner -->
+<div class="banner">
+  <img src="newbanner.jpg" alt="MR SODA Banner">
+
+  <div class="headline-box">
+    <div class="brand-strip">Mr Soda</div>
+    <div class="tagline-strip">TASTE THE FIZZZ!</div>
+  </div>
+</div>
+
+<!-- Content -->
+<div class="container">
+
+  <div class="section-title">OUR FLAVOURS</div>
+
+  <div class="card">
+    <img src="mint.jpg">
     <div>
-        <h3>Mint Mojito</h3>
-        <p>Fresh mint flavour with strong fizz. Perfect refreshing goli soda.</p>
+      <h3>Mint Mojito</h3>
+      <p>Fresh mint flavour with strong fizz. Perfect refreshing goli soda.</p>
     </div>
-</div><div class="box">
-    <img src="Jeera.jpg">
+  </div>
+
+  <div class="card">
+    <img src="jeera.jpg">
     <div>
-        <h3>Jeera Masala</h3>
-        <p>Traditional jeera masala taste with strong desi flavour and fizz.</p>
+      <h3>Jeera Masala</h3>
+      <p>Traditional jeera masala taste with strong desi flavour and fizz.</p>
     </div>
-</div><div class="box">
+  </div>
+
+  <div class="card">
     <img src="lemon.jpg">
     <div>
-        <h3>Lemon</h3>
-        <p>Sharp and refreshing lemon flavour with instant energy.</p>
+      <h3>Lemon</h3>
+      <p>Sharp and refreshing lemon flavour with instant energy.</p>
     </div>
-</div><div class="box">
+  </div>
+
+  <div class="card">
     <img src="orange.jpg">
     <div>
-        <h3>Orange</h3>
-        <p>Juicy orange taste with balanced sweetness for all age.</p>
+      <h3>Orange</h3>
+      <p>Juicy orange taste with balanced sweetness for all age.</p>
     </div>
-</div><div class="box">
+  </div>
+
+  <div class="card">
     <img src="fruit.jpg">
     <div>
-        <h3>Fruit Beer (Non-Alcoholic)</h3>
-        <p>Rich fruity taste, smooth fizz, completely non-alcoholic.</p>
+      <h3>Fruit Beer (Non-Alcoholic)</h3>
+      <p>Rich fruity taste, smooth fizz, completely non-alcoholic.</p>
     </div>
-</div></div><!-- WHY CHOOSE --><div class="why">
+  </div>
+
+  <div class="why">
     <h2>Why Choose MR SODA?</h2>
     <ul>
-        <li>✔ Premium Quality Ingredients</li>
-        <li>✔ High Demand Product</li>
-        <li>✔ Attractive Margins</li>
-        <li>✔ Strong Brand Support</li>
+      <li>Fresh & Premium Flavours</li>
+      <li>Strong Long-Lasting Fizz</li>
+      <li>Best Distributor Margins</li>
+      <li>Trusted Growing Brand</li>
     </ul>
-</div><!-- DISTRIBUTOR --><div class="distributor">
-    <h2>Become a Distributor of MR SODA</h2>
-    <p>High Demand | Great Margins | Strong Brand Support</p>
-    <p><b>Contact:</b> mr.sodaudaipur@gmail.com</p><a href="mailto:mr.sodaudaipur@gmail.com" class="distributor-btn">Enquire Now</a>
+  </div>
 
-</div><!-- FOOTER --><div class="footer">
-    © 2026 MR SODA | All Rights Reserved
-</div></body>
+</div>
+
+<!-- Distributor -->
+<div class="distributor">
+  <h2>Become a Distributor of MR SODA</h2>
+  <p>High Demand | Great Margins | Strong Brand Support</p>
+  <p><b>Contact:</b> mr.sodaudaipur@gmail.com</p>
+  <a href="mailto:mr.sodaudaipur@gmail.com">Enquire Now</a>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+© 2026 MR SODA | TASTE THE FIZZZ!
+</div>
+
+</body>
 </html>
