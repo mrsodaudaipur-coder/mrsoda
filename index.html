@@ -1,73 +1,225 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mr Soda | Taste The Fizzz!</title>
+  <meta charset="UTF-8">
+  <title>MR SODA | Taste The Fizzz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
-    body { margin:0; font-family: Arial, sans-serif; background:#eaf6ff; }
-    .top-bar { background:#000; color:#fff; padding:8px 12px; font-size:14px; text-align:center; }
-    .hero { position:relative; }
-    .hero img { width:100%; display:block; }
-    .headline { position:absolute; top:20px; right:20px; text-align:right; }
-    .headline .brand { background:#ff9f1c; color:#000; padding:10px 16px; font-size:28px; font-weight:bold; display:inline-block; }
-    .headline .tagline { background:#000; color:#fff; padding:8px 14px; font-size:18px; margin-top:6px; display:inline-block; }
-    .section-title { text-align:center; font-size:28px; margin:30px 0 20px; color:#0077b6; }
-    .flavours { max-width:900px; margin:auto; padding:0 12px 40px; }
-    .card { background:#fff; border-radius:16px; box-shadow:0 4px 12px rgba(0,0,0,0.1); display:flex; gap:16px; padding:16px; margin-bottom:18px; align-items:center; }
-    .card img { width:90px; height:auto; border-radius:10px; }
-    .card h3 { margin:0; color:#ff7a00; }
-    .card p { margin:6px 0 0; color:#333; }
-    footer { background:#000; color:#fff; text-align:center; padding:18px 10px; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #eaf6ff;
+      color: #222;
+    }
+
+    /* Top Info Bar */
+    .top-bar {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 8px 10px;
+      font-size: 13px;
+    }
+
+    /* Banner */
+    .banner {
+      position: relative;
+      width: 100%;
+    }
+
+    .banner img {
+      width: 100%;
+      display: block;
+    }
+
+    .headline {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      text-align: right;
+    }
+
+    .headline .brand {
+      background: orange;
+      color: #000;
+      font-size: 22px;
+      font-weight: bold;
+      padding: 6px 12px;
+      display: inline-block;
+      border-radius: 4px;
+    }
+
+    .headline .tagline {
+      background: #000;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 6px 12px;
+      display: inline-block;
+      margin-top: 6px;
+      border-radius: 4px;
+    }
+
+    /* Section Title */
+    .section-title {
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+      color: #0077b6;
+      margin: 25px 0 15px;
+    }
+
+    /* Flavour Cards */
+    .card {
+      background: #fff;
+      margin: 15px;
+      border-radius: 14px;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+    }
+
+    .card img {
+      width: 90px;
+      height: auto;
+      border-radius: 10px;
+      margin-right: 15px;
+    }
+
+    .card h3 {
+      margin: 0;
+      color: orange;
+    }
+
+    .card p {
+      margin: 6px 0 0;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    /* Distributor Section */
+    .distributor {
+      background: #000;
+      color: #fff;
+      margin: 25px 15px;
+      padding: 25px 15px;
+      border-radius: 16px;
+      text-align: center;
+    }
+
+    .distributor h2 {
+      margin: 0 0 10px;
+      color: orange;
+    }
+
+    .distributor p {
+      margin: 8px 0;
+      font-size: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 22px;
+      background: orange;
+      color: #000;
+      font-weight: bold;
+      border-radius: 25px;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    /* Footer */
+    .footer {
+      background: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 15px;
+      font-size: 13px;
+      margin-top: 25px;
+    }
   </style>
 </head>
-<body>  <div class="top-bar">✔ Distributor Enquiry Open | ✉ mr.sodaudaipur@gmail.com</div>  <div class="hero">
-    <img src="newbanner.jpg" alt="Mr Soda Banner" />
+
+<body>
+
+  <!-- Top Info Bar -->
+  <div class="top-bar">
+    ✔ Distributor Enquiry Open | ✉ mr.sodaudaipur@gmail.com
+  </div>
+
+  <!-- Banner -->
+  <div class="banner">
+    <img src="newbanner.jpg" alt="MR SODA Banner">
+
     <div class="headline">
       <div class="brand">Mr Soda</div><br>
       <div class="tagline">TASTE THE FIZZZ!</div>
     </div>
-  </div>  <h2 class="section-title">OUR FLAVOURS</h2>  <div class="flavours"><div class="card">
-  <img src="mint.jpg" alt="Mint Mojito">
-  <div>
-    <h3>Mint Mojito</h3>
-    <p>Fresh mint flavour with strong fizz. Perfect refreshing goli soda.</p>
   </div>
-</div>
 
-<div class="card">
-  <img src="jeera.jpg" alt="Jeera Masala">
-  <div>
-    <h3>Jeera Masala</h3>
-    <p>Traditional jeera masala taste with strong desi flavour and fizz.</p>
+  <!-- Flavours -->
+  <div class="section-title">OUR FLAVOURS</div>
+
+  <div class="card">
+    <img src="mint.jpg" alt="Mint Mojito">
+    <div>
+      <h3>Mint Mojito</h3>
+      <p>Fresh mint flavour with strong fizz. Perfect refreshing goli soda.</p>
+    </div>
   </div>
-</div>
 
-<div class="card">
-  <img src="lemon.jpg" alt="Lemon">
-  <div>
-    <h3>Lemon</h3>
-    <p>Zesty lemon flavour with refreshing fizz.</p>
+  <div class="card">
+    <img src="jeera.jpg" alt="Jeera Masala">
+    <div>
+      <h3>Jeera Masala</h3>
+      <p>Traditional jeera masala taste with strong desi flavour and fizz.</p>
+    </div>
   </div>
-</div>
 
-<div class="card">
-  <img src="orange.jpg" alt="Orange">
-  <div>
-    <h3>Orange</h3>
-    <p>Sweet orange flavour with strong fizz.</p>
+  <div class="card">
+    <img src="lemon.jpg" alt="Lemon">
+    <div>
+      <h3>Lemon</h3>
+      <p>Sharp and refreshing lemon flavour with instant energy.</p>
+    </div>
   </div>
-</div>
 
-<div class="card">
-  <img src="fruit.jpg" alt="Fruit Beer">
-  <div>
-    <h3>Fruit Beer</h3>
-    <p>Classic fruit beer flavour with rich desi taste.</p>
+  <div class="card">
+    <img src="orange.jpg" alt="Orange">
+    <div>
+      <h3>Orange</h3>
+      <p>Juicy orange taste with balanced sweetness for all ages.</p>
+    </div>
   </div>
-</div>
 
-  </div>  <footer>
-    <p>© 2026 Mr Soda | All Rights Reserved</p>
-    <p>Contact: mr.sodaudaipur@gmail.com</p>
-  </footer></body>
+  <div class="card">
+    <img src="fruit.jpg" alt="Fruit Beer">
+    <div>
+      <h3>Fruit Beer (Non-Alcoholic)</h3>
+      <p>Rich fruity taste, smooth fizz, completely non-alcoholic.</p>
+    </div>
+  </div>
+
+  <!-- Distributor Section -->
+  <div class="distributor">
+    <h2>Hamare Sath Jude</h2>
+    <p>Become a Distributor of MR SODA</p>
+    <p>High Demand • Great Margins • Strong Brand Support</p>
+    <p><b>Contact:</b> mr.sodaudaipur@gmail.com</p>
+
+    <a class="btn" href="mailto:mr.sodaudaipur@gmail.com?subject=Distributor Enquiry - MR SODA">
+      Enquire Now
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    © 2026 MR SODA | All Rights Reserved <br>
+    Contact: mr.sodaudaipur@gmail.com
+  </div>
+
+</body>
 </html>
